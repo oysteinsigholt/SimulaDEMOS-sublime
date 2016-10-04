@@ -13,7 +13,8 @@ To select a color scheme go to Preferences -> Color Scheme in Sublime Text.
 
 ## Screenshots
 
-![SimulaDEMOS-sublime preview](//raw.githubusercontent.com/oysteinsigholt/SimulaDEMOS-sublime/master/screenshots/blackboard.jpg)
+![SimulaDEMOS-sublime preview](https://raw.githubusercontent.com/oysteinsigholt/SimulaDEMOS-sublime/master/screenshots/blackboard.jpg)
+
 SimulaDEMOS-sublime with the blackboard color scheme.
 
 ## About
