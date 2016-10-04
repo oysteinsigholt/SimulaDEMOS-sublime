@@ -1,0 +1,30 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Simula DEMOS
+scopeName: source.simulademos
+fileTypes: [sim]
+uuid: 00e33390-a82e-4e24-bdb0-290d21180d29
+
+patterns:
+- name: comment.line.character.simulademos
+  match: \!.+?;
+- name: string.quoted.single.simulademos
+  match: \'.+?\'
+- name: string.quoted.double.simulademos
+  match: \".+?\"
+- name: keyword.control.simulademos
+  match: (?i)\b(after|and|before|begin|class|delay|do|else|end|eq|eqv|external|for|ge|go|goto|gt|hidden|if|imp|in|inner|inspect|is|le|lt|name|ne|new|none|not|notext|or|otherwise|prior|procedure|protected|qua|reactive|ref|step|switch|then|this|to|until|value|virtual|when|while)\b
+- name: storage.type.simulademos
+  match: (?i)\b(array|boolean|character|integer|long|real|short|text)\b
+- name: constant.numeric.simulademos
+  match: \b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b
+- name: constant.language.boolean.simulademos
+  match: (?i)\b(true|false)\b
+- name: keyword.operator.simulademos
+  match: (\@|\$|\?|\-|\+|\*|\/|\<|\>|\!|\~|\%|\^|\&|\||:=|:-)
+- name: support.function.simulademos
+  match: (?i)\b(outtext|outreal|outint|outfix|outimage|edit)\b
+- name: support.class.simulademos
+  match: (?i)\b(bdist|bin|constant|count|dist|draw|empirical|entity|erlang|negexp|normal|poisson|queue|randint|rdist|res|tally|uniform|waitq|condq)\b
+- name: support.other.simulademos
+  match: (?i)\b(acquire|avail|cancel|coopt|current|demos|extime|find|first|give|histogram|hold|idle|into|last|length|nextev|notrace|now|out|release|repeat|report|reset|sample|schedule|signal|take|time|trace|update|wait|waituntil)\b
