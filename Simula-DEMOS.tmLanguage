@@ -42,7 +42,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b</string>
+			<string>\b[0-9]+\.?\b</string>
 			<key>name</key>
 			<string>constant.numeric.simulademos</string>
 		</dict>
@@ -54,7 +54,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\@|\$|\?|\-|\+|\*|\/|\&lt;|\&gt;|\!|\~|\%|\^|\&amp;|\||:=|:-)</string>
+			<string>(\@|\$|\?|\-|\+|\*|\/|\!|\~|\%|\^|\&amp;|\||:=|:-|&lt;=|&gt;=|&lt;|&gt;)</string>
 			<key>name</key>
 			<string>keyword.operator.simulademos</string>
 		</dict>
@@ -74,7 +74,7 @@
 			<key>match</key>
 			<string>(?i)\b(acquire|avail|cancel|coopt|current|demos|extime|find|first|give|histogram|hold|idle|into|last|length|nextev|notrace|now|out|release|repeat|report|reset|sample|schedule|signal|take|time|trace|update|wait|waituntil)\b</string>
 			<key>name</key>
-			<string>support.other.simulademos</string>
+			<string>support.function.simulademos</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

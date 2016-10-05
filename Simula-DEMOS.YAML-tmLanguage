@@ -17,14 +17,14 @@ patterns:
 - name: storage.type.simulademos
   match: (?i)\b(array|boolean|character|integer|long|real|short|text)\b
 - name: constant.numeric.simulademos
-  match: \b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b
+  match: \b[0-9]+\.?\b
 - name: constant.language.boolean.simulademos
   match: (?i)\b(true|false)\b
 - name: keyword.operator.simulademos
-  match: (\@|\$|\?|\-|\+|\*|\/|\<|\>|\!|\~|\%|\^|\&|\||:=|:-)
+  match: (\@|\$|\?|\-|\+|\*|\/|\!|\~|\%|\^|\&|\||:=|:-|<=|>=|<|>)
 - name: support.function.simulademos
   match: (?i)\b(outtext|outreal|outint|outfix|outimage|edit)\b
 - name: support.class.simulademos
   match: (?i)\b(bdist|bin|constant|count|dist|draw|empirical|entity|erlang|negexp|normal|poisson|queue|randint|rdist|res|tally|uniform|waitq|condq)\b
-- name: support.other.simulademos
+- name: support.function.simulademos
   match: (?i)\b(acquire|avail|cancel|coopt|current|demos|extime|find|first|give|histogram|hold|idle|into|last|length|nextev|notrace|now|out|release|repeat|report|reset|sample|schedule|signal|take|time|trace|update|wait|waituntil)\b
