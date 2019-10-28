@@ -7,7 +7,8 @@ uuid: 00e33390-a82e-4e24-bdb0-290d21180d29
 
 patterns:
 - name: comment.line.character.simulademos
-  match: \!.+?;
+  begin: (?i:\!|\bcomment)
+  end: ;
 - name: string.quoted.single.simulademos
   match: \'.+?\'
 - name: string.quoted.double.simulademos
