@@ -11,8 +11,10 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>match</key>
-			<string>\!.+?;</string>
+			<key>begin</key>
+			<string>(?i:\!|\bcomment)</string>
+			<key>end</key>
+			<string>;</string>
 			<key>name</key>
 			<string>comment.line.character.simulademos</string>
 		</dict>
